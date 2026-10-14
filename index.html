@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="MOHA GAMING — مكتبة ألعاب وثيمات PlayStation 3.">
+  <title>MOHA GAMING | ألعاب وثيمات PS3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="MOHA GAMING الصفحة الرئيسية">
+      <span class="brand-mark">M</span>
+      <span><strong>MOHA <b>GAMING</b></strong><small>PLAY • DISCOVER • CUSTOMIZE</small></span>
+    </a>
+    <a class="github-link" href="https://github.com/" target="_blank" rel="noopener">نشر الموقع ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> عالم PlayStation 3</span>
+        <h1>عِش الكلاسيكيات.<br><em>خصّص جهازك.</em></h1>
+        <p>اكتشف ألعاب PS3 وثيمات مميزة في مكان واحد. مكتبة عربية بسيطة وسريعة، مصممة لهاتفك.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#library">تصفّح المكتبة <span>←</span></a>
+          <a class="btn btn-ghost" href="#how">طريقة الاستخدام</a>
+        </div>
+        <div class="hero-stats"><span><b id="game-count">4</b><small>ألعاب تجريبية</small></span><span><b id="theme-count">4</b><small>ثيمات تجريبية</small></span><span><b>مجاني</b><small>بدون اشتراك</small></span></div>
+      </div>
+      <div class="hero-art" aria-label="تصميم تجريدي مستوحى من ألعاب الفيديو">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="console"><div class="console-light"></div><div class="console-disc"></div><span>PLAYSTATION 3</span></div>
+        <div class="floating-chip chip-one">PS3</div><div class="floating-chip chip-two">✦ THEMES</div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">ⓘ</span>
+      <p><strong>ملاحظة:</strong> العناصر المعروضة أمثلة للتصميم. أضف روابطك الموثوقة للملفات التي تملك حق توزيعها أو التي يسمح أصحابها بمشاركتها. لا يوفّر الموقع ملفات ألعاب محمية بحقوق النشر.</p>
+    </section>
+
+    <section id="library" class="library-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">مكتبتك الرقمية</span><h2>اكتشف المكتبة</h2></div>
+        <span class="library-count">08 عناصر</span>
+      </div>
+      <div class="controls">
+        <label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن لعبة أو ثيم..." aria-label="ابحث عن لعبة أو ثيم"></label>
+        <div class="filters" role="group" aria-label="تصفية المكتبة">
+          <button class="filter active" data-filter="all">الكل</button>
+          <button class="filter" data-filter="game">الألعاب</button>
+          <button class="filter" data-filter="theme">الثيمات</button>
+        </div>
+      </div>
+      <div id="cards" class="cards"></div>
+      <p id="empty" class="empty" hidden>لم نعثر على نتائج. جرّب كلمة أخرى.</p>
+    </section>
+
+    <section id="how" class="how-section">
+      <div><span class="eyebrow">بسهولة</span><h2>كيف تستخدم الموقع؟</h2><p>ابحث عن العنصر، اقرأ وصفه، ثم اضغط على زر التفاصيل أو الرابط الذي تضيفه لاحقًا.</p></div>
+      <div class="steps">
+        <article><span>01</span><div><h3>ابحث</h3><p>استخدم خانة البحث أو اختر الألعاب والثيمات.</p></div></article>
+        <article><span>02</span><div><h3>أضف روابطك</h3><p>عدّل ملف <code>script.js</code> وضع رابط الملف المسموح بمشاركته.</p></div></article>
+        <article><span>03</span><div><h3>شارك الموقع</h3><p>انشره مجانًا عبر GitHub Pages وأرسل الرابط لأصدقائك.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span><strong>MOHA <b>GAMING</b></strong><small>PLAY • DISCOVER • CUSTOMIZE</small></span></a>
+    <p>موقع من صنع المعجبين، غير تابع رسميًا لشركة PlayStation أو Sony.</p>
+    <span class="copyright">© <span id="year"></span> MOHA GAMING</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
